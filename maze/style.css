@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+    max-width: 400px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100%;
+    padding-bottom: 100%;
+    border: 1px solid #000;
+}
+
+.player {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #ff0000;
+    position: absolute;
+}
